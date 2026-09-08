@@ -98,14 +98,38 @@ section h3 {
   gap: 8px;
 }
 
-.participants-list li {
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #e9f1ff;
   color: #1d4ed8;
   padding: 6px 10px;
   border-radius: 999px;
-  font-size: 0.82rem;
   border: 1px solid #cfe0ff;
+}
+
+.participant-email {
+  font-size: 0.82rem;
   font-weight: 600;
+}
+
+.participant-remove {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.participant-remove:hover {
+  background: #bfdbfe;
 }
 
 .form-group {
